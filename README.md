@@ -74,6 +74,17 @@ h1{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.footer {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #5bb045;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px 0px 0px 0px;
+  color: #9c1018;
+}
+
     </style>
 </head>
 <body>
@@ -122,6 +133,10 @@ h1{
             </form>
 
         </div>
+    </div>
+     <div class="footer">
+        Copyright &#169;Developed by Archana.
+      </div>
     </div>
     <script type="text/javascript">
         var button;
@@ -197,7 +212,7 @@ h1{
 
 ## OUTPUT:
 
-![Validation](./Validation.png)
+![labexpoutput](./labexpoutput.png)
 ![Validator](./Validator.png)
 
 ## Result:
