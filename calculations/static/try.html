@@ -1,0 +1,53 @@
+<script type="text/javascript">
+  var button;
+  button=document.querySelector("#calculatevol");
+  button.addEventListener("click",function(){
+      var radtext,heitext,voltext;
+      var radval,heival,volval;
+      var pi;
+      var num=1/3;
+      var res,res1,reg;
+      
+      radtext=document.querySelector("#radedit");
+      heitext=document.querySelector("#heiedit");
+      voltext=document.querySelector("#cedit");
+      pi=Math.PI;
+      reg=new RegExp("^[1-9]+[0-9]*$")
+
+      radval=radtext.value;
+      res=radval.match(reg);
+      heival=heitext.value;
+      res1=heival.match(reg);
+      
+      if(res==null)
+      {
+          alert("Please Enter Positive Integers Only for Radius");
+      }
+      if(res1==null)
+      {
+          alert("Please Enter Positive Integers Only for Height");
+      }
+      volval=num*pi*radval*radval*heival;
+      voltext.value=""+volval;
+      
+      
+
+});
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+var Rtext,Htext,vtext;
+            var Rval,Hval,vval,reg,res1,res2;
+            Rtext=document.querySelector("#Redit");
+            Htext=document.querySelector("#Hedit");
+            vtext=document.querySelector("#vedit");

@@ -8,5 +8,51 @@
   </head>
   <body>
     <h1>MATHEMATICAL CALCULATIONS</h1>
-  </body>
+    <form>
+      <div class ="formceartion">
+          <label for="radiusvalue">Radius =  </label>
+          <input type="number" id="radiusvalue" readonlyvalue="0"/>
+      </div>
+      <div class ="formceartion">
+          <label for="heightvalue">Height =  </label>
+          <input type="number" id="heightvalue" readonlyvalue="0"/>
+      </div>
+      <div class="formcreation">
+        <input type="button" value="CALCULATE" id="calbutton"/>
+      </div><br>
+
+      <div class="formcreation">
+        <lable for="resultvalue">Result=</lable>
+        <input type="number" id="resultvalue" readonly="0"/>
+      </div><br>
+      <div class="formelement">
+      
+      </div><br>
+      
+  </form>
+  <script type="text/javascript">
+  button=document.querySelector("#calbutton");
+    button.addEventListener("click",function(){ 
+        var radtext,heitext,resulttext,;
+        var radval,heival,resultval ;
+        radtext=document.querySelector("#radiusvalue")
+        heitext=document.querySelector("#heightvalue")
+        resulttext=document.querySelector("#resultvalue")
+
+
+
+        radval= parseint(radtext.value);
+        heival= parseint(heitext.vlaue);
+        addval=  radval + heival
+        
+        
+        radtext.value=""+radval;
+        heitext.value=""+heival;
+        resulttext.value=""+resultval;
+
+  </script>
+
+</body>
+
+
 </html>

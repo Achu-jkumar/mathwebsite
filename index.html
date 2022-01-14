@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathematical Calculations</title>
+  </head>
+  <body>
+    <h1>MATHEMATICAL CALCULATIONS</h1>
+    <form>
+        <div class ="formceartion">
+            <label for="radiusvalue">Radius =  </label>
+            <input type="number" id="radiusvalue" value=""/>
+        </div>
+        <div class ="formceartion">
+            <label for="heightvalue">Height =  </label>
+            <input type="number" id="heightvalue" value=""/>
+        </div>
+
+        <div>
+            <div class="formcreation">
+                <input type ="button" value="Calculate Volume" id="calculatevolumebutton"/>
+            </div>
+        </div>
+    </form>
+    <script type="text/javascript">
+        document.queryselector("#calculatevolumebutton").addEventListener("click",function(){
+            var radiusfield;
+            var radiusvalue,reg,res;
+            radiusfield=document.queryselector("#radiusvalue");
+            radiusvalue = radiusfield.value;
+            reg=new RegExp("^[1-9]+[0-9]*$");
+            res=radiusvalue.match(reg);
+            if(res==null)
+            {
+                alert("Enter a valid number ");
+            }else{
+                alert("Correct!!!");
+            }
+        });    
+    </script>
+
+  </body>
+
+</html>
